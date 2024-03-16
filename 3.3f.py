@@ -1,5 +1,3 @@
-# Mis asi on anagramm?
-
 def leidub_anagramm(matrix):
     def on_anagramm(s1, s2):
         return sorted(s1) == sorted(s2)
@@ -11,5 +9,4 @@ def leidub_anagramm(matrix):
             sone = rida[i]
             if on_anagramm(vasak + parem, sone):
                 return True
-            else: return False
-    
+    return False
