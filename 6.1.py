@@ -5,6 +5,9 @@ def alla_ules(n):
     for i in range(0, arv, 2):
         print(n)
         n -= 2
+
+        #See ei tee midagi
+        alla_ules(-1)
         
     print("Põhi!")
 
