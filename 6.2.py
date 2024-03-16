@@ -5,6 +5,9 @@ def paarissumma(n):
     
     if n % 2 != 0:
         n -= 1
+        
+        # See ei tee midagi jälle
+        paarissumma(-1)
        
     summa = 0
     for i in range(0, n, 2):
