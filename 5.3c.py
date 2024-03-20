@@ -1,12 +1,10 @@
 def kooslubajad(erakonnad):
-    dictonary = {}
-    for erakond in erakonnad:
-        lubadused = []
-        for lubadus in erakond:
-            lubadused.append(lubadus)
-        dictonary[erakonnad.index(erakond)] = lubadused
-        
-print(kooslubajad([{"maamaks kaotada", "pensione tõsta", "kaitsekulutusi tõsta"},
-                 {"lasteaiaõpetajate palku tõsta", "kindlustada tasuta hambaravi kuni 30-aastastele"},
-                 {"sisserännet piirata", "pensione tõsta", "kaitsekulutusi tõsta"},
-                 set()]))
+    max_uhisosa = 0
+    indeksid = (0, 0)
+    for i in range(len(erakonnad)):
+        for j in range(i+1, len(erakonnad)):
+            uhisosa = len(erakonnad[i].intersection(erakonnad[j]))
+            if uhisosa >= max_uhisosa:
+                max_uhisosa = uhisosa
+                indeksid = (i, j)
+    return indeksid

@@ -16,4 +16,3 @@ def paarissumma(n):
         
     return summa
         
-print(paarissumma(100))

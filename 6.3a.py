@@ -1,5 +1,5 @@
 def on_rahulik(arvamus1, arvamus2, erinevus):
-    if abs(arvamus1 - arvamus2) < erinevus or arvamus1 * arvamus2 > 0:
+    if abs(arvamus1 - arvamus2) <= erinevus or arvamus1 * arvamus2 >= 0:
         return True
     return False
 
